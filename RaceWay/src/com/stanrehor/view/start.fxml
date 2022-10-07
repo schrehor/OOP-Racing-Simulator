@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="300.0" maxWidth="500.0" prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.stanrehor.controller.StartController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0">
+         <children>
+            <StackPane layoutY="30.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="55.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onActionGoCreateAccount" text="Create a new account" StackPane.alignment="CENTER_LEFT">
+                     <StackPane.margin>
+                        <Insets left="100.0" />
+                     </StackPane.margin>
+                  </Button>
+                  <Label text="Would you like to create a new account or load an existing one?" textAlignment="CENTER">
+                     <StackPane.margin>
+                        <Insets bottom="130.0" />
+                     </StackPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnLoad" mnemonicParsing="false" onAction="#onActionLoadAccount" text="Load an existing account" StackPane.alignment="CENTER_RIGHT">
+                     <StackPane.margin>
+                        <Insets right="95.0" />
+                     </StackPane.margin>
+                  </Button>
+               </children>
+            </StackPane>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="55.0" prefHeight="55.0" prefWidth="500.0" text="Welcome to RaceWay." textAlignment="CENTER" textOverrun="CLIP" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

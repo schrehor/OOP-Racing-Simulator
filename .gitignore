@@ -1,0 +1,9 @@
+*.uxf
+*.docx
+*.pdf
+*.rar
+RaceWay/out
+RaceWay/.idea
+*.txt
+Subory k projektu
+RaceWay/*.iml

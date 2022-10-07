@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="450.0" maxWidth="300.0" minHeight="450.0" minWidth="300.0"
+            prefHeight="450.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.stanrehor.controller.AccountController">
+   <children>
+      <Label alignment="CENTER" layoutX="129.0" layoutY="6.0" maxWidth="40.0" minHeight="40.0" prefHeight="40.0" text="Creating new account" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Label>
+      <VBox layoutY="40.0" prefHeight="460.0" prefWidth="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <AnchorPane prefHeight="195.0" prefWidth="300.0">
+               <children>
+                  <TextField fx:id="firstName" layoutX="110.0" layoutY="21.0" />
+                  <Label layoutX="32.0" layoutY="25.0" text="First Name" />
+                  <TextField fx:id="lastName" layoutX="110.0" layoutY="61.0" />
+                  <Label layoutX="32.0" layoutY="65.0" text="Last Name" />
+                  <TextField fx:id="age" layoutX="110.0" layoutY="105.0" />
+                  <Label layoutX="32.0" layoutY="109.0" text="Age" />
+                  <TextField fx:id="ingameName" layoutX="110.0" layoutY="148.0" />
+                  <Label layoutX="32.0" layoutY="152.0" text="Ingame name" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="147.0" prefWidth="300.0">
+               <children>
+                  <VBox fillWidth="false" layoutX="28.0" layoutY="25.0" prefHeight="122.0" prefWidth="122.0">
+                     <children>
+                        <RadioButton fx:id="car" mnemonicParsing="false" prefHeight="39.0" prefWidth="92.0" selected="true" text="Car Specialist">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="driver" />
+                           </toggleGroup></RadioButton>
+                        <RadioButton fx:id="bike" mnemonicParsing="false" prefHeight="39.0" prefWidth="96.0" text="Bike Specialist" toggleGroup="$driver" />
+                        <RadioButton fx:id="universal" mnemonicParsing="false" prefHeight="39.0" prefWidth="105.0" text="Universal Driver" toggleGroup="$driver" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </VBox>
+                  <Label layoutX="28.0" text="Pick your Driver." />
+               </children></AnchorPane>
+            <AnchorPane prefHeight="64.0" prefWidth="300.0">
+               <children>
+                  <Button fx:id="move" alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="101.0" layoutY="14.0" mnemonicParsing="false" onAction="#onActionCreateAccount" text="Create Account" textAlignment="CENTER" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
